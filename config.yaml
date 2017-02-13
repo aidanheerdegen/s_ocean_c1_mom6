@@ -1,0 +1,19 @@
+# PBS flags
+queue: express
+project: x77
+walltime: 4:00:00
+ncpus: 512
+mem: 400GB
+jobname: s_ocean_c
+collate_walltime: 4:00:00
+collate_mem: 30GB
+# Model config
+model: mom6
+# model: gold
+shortpath: /short/x77
+exe: MOM6
+# exe: MOM6_debug
+# exe: GOLD
+input: s_ocean_c
+priority: 15
+stacksize: unlimited 
